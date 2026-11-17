@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f6f1">
+  <meta name="description" content="Excel Ndukuba's blueprint for success: a plan for education, engineering, financial independence, and personal growth.">
+  <title>My Blueprint for Success — Excel Ndukuba</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f8f6f1;
+      --ink: #26352f;
+      --muted: #64736a;
+      --green: #37644f;
+      --green-dark: #274c3b;
+      --mint: #e7eee7;
+      --peach: #f2e4d7;
+      --line: #dedfd6;
+      --white: #fffefa;
+      --serif: Georgia, "Times New Roman", serif;
+      --sans: "Segoe UI", Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .page {
+      width: min(1120px, calc(100% - 48px));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 84px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .wordmark {
+      color: var(--green-dark);
+      font-family: var(--serif);
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      text-decoration: none;
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      font-size: 0.88rem;
+    }
+
+    .nav a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    .nav a:hover,
+    .nav a:focus-visible {
+      color: var(--green-dark);
+      text-decoration: underline;
+      text-underline-offset: 5px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(280px, 0.7fr);
+      gap: 64px;
+      align-items: center;
+      padding: 100px 0 96px;
+    }
+
+    .eyebrow {
+      margin: 0 0 16px;
+      color: var(--green);
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: var(--serif);
+      font-weight: 500;
+      letter-spacing: -0.035em;
+    }
+
+    h1 {
+      max-width: 700px;
+      margin-bottom: 22px;
+      font-size: clamp(3.2rem, 7vw, 5.7rem);
+      line-height: 1.02;
+    }
+
+    h1 em {
+      color: var(--green);
+      font-weight: 400;
+    }
+
+    .hero-quote {
+      max-width: 610px;
+      margin-bottom: 20px;
+      color: var(--green-dark);
+      font-family: var(--serif);
+      font-size: clamp(1.45rem, 2.5vw, 2rem);
+      line-height: 1.35;
+    }
+
+    .hero-copy {
+      max-width: 610px;
+      margin-bottom: 22px;
+      color: var(--muted);
+      font-size: 1.02rem;
+    }
+
+    .deadline {
+      display: inline-block;
+      padding: 8px 14px;
+      border: 1px dashed #a56b4a;
+      border-radius: 999px;
+      background: var(--peach);
+      color: var(--green-dark);
+      font-size: 0.86rem;
+      font-weight: 600;
+    }
+
+    .project-card {
+      margin-top: 28px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--white);
+    }
+
+    .project-card div {
+      display: grid;
+      grid-template-columns: 105px 1fr;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .project-card div:last-child {
+      border-bottom: 0;
+    }
+
+    .project-card b,
+    .project-card span {
+      padding: 10px 14px;
+      font-size: 0.88rem;
+    }
+
+    .project-card b {
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .hero-art {
+      position: relative;
+      display: grid;
+      min-height: 330px;
+      place-items: center;
+      overflow: hidden;
+    }
+
+    .orbit {
+      position: absolute;
+      width: min(100%, 330px);
+      aspect-ratio: 1;
+      border: 1px solid #cbd6ca;
+      border-radius: 50%;
+      animation: orbit-turn 90s linear infinite;
+    }
+
+    .orbit::before,
+    .orbit::after {
+      position: absolute;
+      border: 1px solid #cbd6ca;
+      border-radius: 50%;
+      content: "";
+    }
+
+    .orbit::before {
+      inset: 25px -20px;
+      transform: rotate(-35deg);
+    }
+
+    .orbit::after {
+      inset: -18px 30px;
+      transform: rotate(38deg);
+    }
+
+    .orbit-center {
+      position: relative;
+      display: grid;
+      width: 178px;
+      aspect-ratio: 1;
+      align-content: center;
+      place-items: center;
+      gap: 7px;
+      border-radius: 50%;
+      background: var(--mint);
+      color: var(--green-dark);
+      font-family: var(--serif);
+      font-size: 1.35rem;
+      line-height: 1.25;
+      text-align: center;
+    }
+
+    .hero-symbol {
+      width: 42px;
+      height: 42px;
+      color: var(--green);
+    }
+
+    .orbit-dot {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      border: 3px solid var(--paper);
+      border-radius: 50%;
+      background: #c78862;
+    }
+
+    .dot-one {
+      top: 14%;
+      right: 18%;
+      animation: soft-pulse 3.2s ease-in-out infinite;
+    }
+
+    .dot-two {
+      bottom: 18%;
+      left: 10%;
+      width: 11px;
+      height: 11px;
+      background: var(--green);
+      animation: soft-pulse 3.2s ease-in-out 1.6s infinite;
+    }
+
+    .hero-art {
+      animation: art-arrive 850ms ease-out both;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(14px);
+      transition: opacity 550ms ease, transform 550ms ease;
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @keyframes orbit-turn {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes soft-pulse {
+      50% {
+        opacity: 0.65;
+        transform: scale(1.18);
+      }
+    }
+
+    @keyframes art-arrive {
+      from {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .section {
+      padding: 76px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 30px;
+      margin-bottom: 34px;
+    }
+
+    h2 {
+      margin-bottom: 0;
+      font-size: clamp(2.2rem, 4vw, 3.4rem);
+      line-height: 1.1;
+    }
+
+    h3 {
+      margin-bottom: 8px;
+      font-size: 1.45rem;
+    }
+
+    .section-note {
+      max-width: 420px;
+      margin: 0 0 3px;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .vision-panel {
+      display: grid;
+      grid-template-columns: 0.55fr 1.45fr;
+      gap: 36px;
+      padding: 38px;
+      border-radius: 18px;
+      background: var(--mint);
+    }
+
+    .vision-label {
+      margin: 4px 0 0;
+      color: var(--green);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .vision-text {
+      max-width: 710px;
+      margin: 0;
+      font-family: var(--serif);
+      font-size: clamp(1.25rem, 2.2vw, 1.75rem);
+      line-height: 1.5;
+    }
+
+    .values {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      margin-top: 18px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--line);
+    }
+
+    .value {
+      min-height: 190px;
+      padding: 24px;
+      background: var(--white);
+    }
+
+    .value-number {
+      display: block;
+      margin-bottom: 16px;
+      color: #a56b4a;
+      font-family: var(--serif);
+      font-size: 1rem;
+    }
+
+    .value p,
+    .person p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .tabs button {
+      min-height: 44px;
+      padding: 9px 16px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--white);
+      color: var(--ink);
+      font: inherit;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+
+    .tabs button[aria-selected="true"] {
+      border-color: var(--green-dark);
+      background: var(--green-dark);
+      color: white;
+    }
+
+    .goal-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .goal-card,
+    .person {
+      padding: 28px;
+      border-radius: 16px;
+      background: var(--white);
+    }
+
+    .goal-card {
+      border-top: 2px solid var(--green);
+    }
+
+    .goal-card h3 {
+      margin-bottom: 16px;
+      color: var(--green-dark);
+    }
+
+    .plain-list {
+      margin: 0;
+      padding-left: 1.2rem;
+    }
+
+    .plain-list li {
+      margin-bottom: 10px;
+      color: var(--muted);
+    }
+
+    .plain-list li:last-child {
+      margin-bottom: 0;
+    }
+
+    .actions {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .action-card {
+      padding: 28px;
+      border-radius: 16px;
+      background: var(--white);
+    }
+
+    .action-card h3 {
+      margin-bottom: 16px;
+      color: var(--green);
+    }
+
+    .action-card dl {
+      margin: 0;
+    }
+
+    .action-card dt {
+      margin-top: 14px;
+      font-weight: 700;
+    }
+
+    .action-card dt:first-child {
+      margin-top: 0;
+    }
+
+    .action-card dd {
+      margin: 3px 0 0;
+      color: var(--muted);
+      font-size: 0.93rem;
+    }
+
+    .progress-track {
+      height: 12px;
+      margin: 0 0 8px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--white);
+    }
+
+    .progress-fill {
+      width: 0;
+      height: 100%;
+      border-radius: inherit;
+      background: var(--green);
+      transition: width 180ms ease;
+    }
+
+    .progress-copy {
+      margin-bottom: 24px;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    .timeline {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .milestone {
+      padding: 26px;
+      border-radius: 16px;
+      background: var(--white);
+    }
+
+    .milestone:last-child {
+      background: var(--peach);
+    }
+
+    .milestone-year {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: var(--mint);
+      color: var(--green-dark);
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+
+    .milestone:last-child .milestone-year {
+      background: rgba(255, 254, 250, 0.7);
+    }
+
+    .milestone p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .checklist {
+      display: grid;
+      gap: 8px;
+    }
+
+    .checklist label {
+      display: flex;
+      align-items: flex-start;
+      gap: 11px;
+      cursor: pointer;
+    }
+
+    .checklist input {
+      width: 18px;
+      height: 18px;
+      flex: none;
+      margin: 4px 0 0;
+      accent-color: var(--green);
+    }
+
+    .checklist input:checked + span {
+      color: var(--muted);
+      text-decoration: line-through;
+    }
+
+    .storage-message {
+      min-height: 1.4em;
+      margin: 12px 0 0;
+      color: #8a3d24;
+      font-size: 0.85rem;
+    }
+
+    .challenges {
+      display: grid;
+      gap: 0;
+    }
+
+    .challenge {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 30px;
+      padding: 28px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .challenge:first-child {
+      border-top: 2px solid var(--green-dark);
+    }
+
+    .challenge p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .challenge-plan {
+      padding-left: 22px;
+      border-left: 3px solid #c78862;
+    }
+
+    .challenge-plan h3 {
+      margin-bottom: 12px;
+      font-family: var(--sans);
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    .people {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .person {
+      border: 1px solid var(--line);
+    }
+
+    .person h3 {
+      font-size: 1.25rem;
+    }
+
+    .closing {
+      margin: 0 auto 74px;
+      padding: 48px;
+      border-radius: 18px;
+      background: var(--green-dark);
+      color: white;
+    }
+
+    .closing .eyebrow {
+      color: #d6b092;
+    }
+
+    .closing h2 {
+      max-width: 760px;
+      margin-bottom: 18px;
+      color: white;
+    }
+
+    .closing p:last-child {
+      max-width: 650px;
+      margin-bottom: 0;
+      color: #dce5dc;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 22px 0 30px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    :focus-visible {
+      outline: 3px solid #ba7954;
+      outline-offset: 4px;
+    }
+
+    @media (max-width: 900px) {
+      .values,
+      .people {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 960px) {
+      .page {
+        width: min(100% - 36px, 600px);
+      }
+
+      .topbar {
+        min-height: 72px;
+      }
+
+      .nav {
+        gap: 12px;
+        font-size: 0.8rem;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 74px 0 60px;
+      }
+
+      .hero-art {
+        min-height: 270px;
+      }
+
+      .orbit {
+        width: 250px;
+      }
+
+      .orbit-center {
+        width: 140px;
+        font-size: 1.15rem;
+      }
+
+      .hero-symbol {
+        width: 34px;
+        height: 34px;
+      }
+
+      .section {
+        padding: 58px 0;
+      }
+
+      .section-heading {
+        align-items: start;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .vision-panel {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 26px;
+      }
+
+      .goal-columns,
+      .actions,
+      .timeline,
+      .challenge {
+        grid-template-columns: 1fr;
+      }
+
+      .challenge {
+        gap: 18px;
+      }
+
+      .challenge-plan {
+        padding-left: 18px;
+      }
+
+      .closing {
+        margin-bottom: 52px;
+        padding: 38px 24px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+        padding: 14px 0;
+      }
+
+      .nav {
+        gap: 14px;
+      }
+
+      .values,
+      .people {
+        grid-template-columns: 1fr;
+      }
+
+      .value {
+        min-height: auto;
+      }
+
+      footer {
+        flex-direction: column;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="page topbar">
+    <a class="wordmark" href="#home">Excel Ndukuba</a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#vision">My vision</a>
+      <a href="#goals">My goals</a>
+      <a href="#plan">My plan</a>
+      <a href="#roadmap">Roadmap</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page hero" id="home" aria-labelledby="hero-title">
+      <div>
+        <p class="eyebrow">A vision for the person I want to become</p>
+        <h1 id="hero-title">My Blueprint for <em>Success</em></h1>
+        <p class="hero-quote">“True success is having the freedom to become who I am capable of being, without compromising who I am.”</p>
+        <p class="hero-copy">A vision for the person I want to become and the life I want to build.</p>
+        <span class="deadline" id="countdown" role="status">UNO admission deadline: November 20, 2026</span>
+        <div class="project-card" aria-label="Blueprint details">
+          <div><b>Project</b><span>Computer Engineering, UNO</span></div>
+          <div><b>Field</b><span>Aerospace and defense</span></div>
+          <div><b>Revision</b><span>1, in progress</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit"></div>
+        <div class="orbit-center">
+          <svg class="hero-symbol" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M39 7c-9 1-17 7-21 17l8 8C36 28 42 20 43 11V7h-4Z"></path>
+            <circle cx="33" cy="16" r="3"></circle>
+            <path d="m19 25-8 1-4 8 10-1m11 2-1 8 8-4 1-8M24 28l-6 6m-6 5-2 4m8-1-2 3"></path>
+          </svg>
+          <span>Freedom<br>to become</span>
+        </div>
+        <span class="orbit-dot dot-one"></span>
+        <span class="orbit-dot dot-two"></span>
+      </div>
+    </section>
+
+    <section class="page section" id="vision" aria-labelledby="vision-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">What success means to me</p>
+          <h2 id="vision-title">A life shaped by purpose</h2>
+        </div>
+        <p class="section-note">Success is about what I achieve—and who I become along the way.</p>
+      </div>
+      <div class="vision-panel">
+        <p class="vision-label">The big picture</p>
+        <p class="vision-text">Success means creating a life that reflects my values, ambitions, and purpose. It involves reaching my potential through continuous learning, meaningful work, financial independence, and personal growth.</p>
+      </div>
+      <div class="values" aria-label="The four pillars of success">
+        <article class="value">
+          <span class="value-number">01</span>
+          <h3>Freedom</h3>
+          <p>Having control over my decisions and direction in life.</p>
+        </article>
+        <article class="value">
+          <span class="value-number">02</span>
+          <h3>Potential</h3>
+          <p>Continuously learning, creating, and developing my abilities.</p>
+        </article>
+        <article class="value">
+          <span class="value-number">03</span>
+          <h3>Stability</h3>
+          <p>Achieving financial security and a sustainable lifestyle.</p>
+        </article>
+        <article class="value">
+          <span class="value-number">04</span>
+          <h3>Fulfillment</h3>
+          <p>Maintaining meaningful relationships and contributing something worthwhile.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="page section" id="goals" aria-labelledby="goals-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">A direction for every part of life</p>
+          <h2 id="goals-title">Where I want to go</h2>
+        </div>
+        <p class="section-note">Choose an area to explore its short-term and long-term goals.</p>
+      </div>
+      <div class="tabs" role="tablist" aria-label="Goal areas" id="goal-tabs"></div>
+      <div class="goal-columns" id="goal-content" role="tabpanel" aria-live="polite"></div>
+    </section>
+
+    <section class="page section" id="plan" aria-labelledby="plan-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Habits into momentum</p>
+          <h2 id="plan-title">How I intend to get there</h2>
+        </div>
+        <p class="section-note">Daily habits, academic steps, technical skills, saving, investing, and personal projects.</p>
+      </div>
+      <div class="actions" id="action-list"></div>
+    </section>
+
+    <section class="page section" id="roadmap" aria-labelledby="roadmap-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">One step at a time</p>
+          <h2 id="roadmap-title">My roadmap</h2>
+        </div>
+        <p class="section-note">Check off each step as I finish it. Progress saves in this browser.</p>
+      </div>
+      <div class="progress-track" id="progress-track" role="progressbar" aria-label="Roadmap progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+      <p class="progress-copy" id="progress-copy"></p>
+      <p class="storage-message" id="storage-message" role="status"></p>
+      <ol class="timeline" id="roadmap-list"></ol>
+    </section>
+
+    <section class="page section" id="challenges" aria-labelledby="challenges-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Prepare for the hard parts</p>
+          <h2 id="challenges-title">What could stand in my way</h2>
+        </div>
+        <p class="section-note">Each obstacle comes with a plan for what I will do when it shows up.</p>
+      </div>
+      <div class="challenges" id="challenge-list"></div>
+    </section>
+
+    <section class="page section" id="people" aria-labelledby="people-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">I don't have to do it alone</p>
+          <h2 id="people-title">Who supports my journey</h2>
+        </div>
+        <p class="section-note">The people I will lean on, and what they help me with.</p>
+      </div>
+      <div class="people">
+        <article class="person">
+          <h3>Family</h3>
+          <p>Emotional support, encouragement, guidance, and financial assistance when necessary.</p>
+        </article>
+        <article class="person">
+          <h3>Advisers and instructors</h3>
+          <p>Help with academic decisions, educational pathways, and overcoming academic challenges.</p>
+        </article>
+        <article class="person">
+          <h3>Friends and peers</h3>
+          <p>Encouragement, accountability, collaboration, and shared learning experiences.</p>
+        </article>
+        <article class="person">
+          <h3>Future mentors</h3>
+          <p>Industry knowledge, career guidance, professional development, and networking.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="page closing" aria-labelledby="closing-title">
+      <p class="eyebrow">Becoming, not just achieving</p>
+      <h2 id="closing-title">I will keep learning, build my independence, and grow into my full potential.</h2>
+      <p>One steady step at a time.</p>
+    </section>
+  </main>
+
+  <footer class="page">
+    <p>Excel Ndukuba · My Blueprint for Success</p>
+    <p>Learning with purpose. Building a life that reflects my values.</p>
+  </footer>
+
+  <script>
+    const goals = {
+      "Education": {
+        short: [
+          "Secure admission to the University of Nebraska at Omaha (UNO) by November 20, 2026.",
+          "Meet with an MCC academic adviser to discuss transcript evaluation and academic pathways.",
+          "Determine whether combining MCC and UNO coursework is practical."
+        ],
+        long: [
+          "Complete a bachelor’s degree in Computer Engineering within four years.",
+          "Begin working professionally in my field by year five."
+        ]
+      },
+      "Career": {
+        short: [
+          "Learn CAD, embedded systems, and other relevant engineering skills.",
+          "Join engineering organizations and start building a professional network."
+        ],
+        long: [
+          "Establish a career in the aerospace and defense industry.",
+          "Work with an established engineering or technology company.",
+          "Develop expertise in electronic systems, hardware, and engineering design.",
+          "Pursue independent research and personal engineering projects.",
+          "Eventually design, develop, or invent something of my own, potentially building a business around it."
+        ]
+      },
+      "Financial independence": {
+        short: [
+          "Begin saving and investing consistently from my paychecks.",
+          "Maintain monthly contributions to my Roth IRA."
+        ],
+        long: [
+          "Invest in stocks and gradually improve my investment knowledge.",
+          "Work toward owning a home or apartment within five years.",
+          "Develop financial management skills through courses and possibly a master’s degree in business."
+        ]
+      },
+      "Personal growth": {
+        short: [
+          "Become more disciplined and consistent.",
+          "Improve critical thinking and problem-solving.",
+          "Maintain physical fitness and healthy eating habits."
+        ],
+        long: [
+          "Build a loving and stable family in the future.",
+          "Develop independent interests and engineering projects.",
+          "Create a comfortable lifestyle with room for hobbies and personal growth."
+        ]
+      }
+    };
+
+    const actions = {
+      "Learning": [
+        ["Education", "Study at least 3 hours daily, divided into one-hour sessions."],
+        ["Academic support", "Meet instructors when I encounter difficulties and consider joining study groups."],
+        ["Academic planning", "Compare MCC and UNO pathways and make informed decisions about workload and transfer credits."]
+      ],
+      "Career": [
+        ["Career development", "Learn CAD, embedded systems, and other relevant engineering skills."],
+        ["Practical experience", "Apply my knowledge through experiments and personal projects."],
+        ["Professional networking", "Join engineering organizations, attend conferences, and connect with professionals."]
+      ],
+      "Money": [
+        ["Saving", "Combine percentage-based saving with a fixed monthly amount."],
+        ["Investing", "Contribute monthly to my Roth IRA and invest in stocks."],
+        ["Financial education", "Take financial management courses and explore further business education."]
+      ],
+      "Body and mind": [
+        ["Fitness", "Go to the gym twice a week and follow a structured exercise routine."],
+        ["Nutrition", "Reduce junk food and develop healthier eating habits."],
+        ["Intellectual growth", "Read novels and personal development books."],
+        ["Problem-solving", "Use everyday challenges as opportunities to think critically and find solutions."],
+        ["Personal projects", "Dedicate about two hours weekly to exploring engineering interests."]
+      ]
+    };
+
+    const challenges = [
+      {
+        title: "Burnout and inconsistency",
+        description: "Balancing two jobs, MCC coursework, and eventually UNO could become overwhelming.",
+        plan: [
+          "Build a balanced, realistic schedule.",
+          "Prioritize responsibilities.",
+          "Make room for rest and recovery.",
+          "Adjust commitments when necessary.",
+          "Focus on consistency rather than doing everything at once."
+        ]
+      },
+      {
+        title: "Academic and career uncertainty",
+        description: "Choosing the most efficient pathway between MCC and UNO while staying on track toward my career goals.",
+        plan: [
+          "Compare academic programs and requirements.",
+          "Evaluate transfer credits and completion timelines.",
+          "Consult academic advisers.",
+          "Choose the pathway that best supports graduating within four years."
+        ]
+      },
+      {
+        title: "Financial limitations",
+        description: "Managing education expenses, daily responsibilities, savings, and investments.",
+        plan: [
+          "Maintain a budget.",
+          "Save and invest consistently.",
+          "Explore scholarships and affordable education options.",
+          "Seek professional opportunities that can improve my income."
+        ]
+      }
+    ];
+
+    const roadmap = [
+      {
+        when: "November 2026",
+        description: "Secure UNO admission and clarify my academic pathway.",
+        steps: [
+          "Secure admission to UNO by November 20, 2026",
+          "Meet with an MCC academic adviser",
+          "Decide if combining MCC and UNO coursework is practical"
+        ]
+      },
+      {
+        when: "Year 1",
+        description: "Establish an academic routine, balance work and school, and develop technical skills.",
+        steps: ["Establish my routine and technical skills"]
+      },
+      {
+        when: "Years 2–3",
+        description: "Progress through Computer Engineering, join engineering organizations, and pursue practical experience.",
+        steps: ["Progress through Computer Engineering and gain practical experience"]
+      },
+      {
+        when: "Year 4",
+        description: "Complete my bachelor’s degree and prepare for professional employment.",
+        steps: ["Complete my bachelor’s degree"]
+      },
+      {
+        when: "Year 5",
+        description: "Establish my professional career and keep working toward home ownership and independent engineering ventures.",
+        steps: ["Start my professional career"]
+      }
+    ];
+
+    function createList(items) {
+      const list = document.createElement("ul");
+      list.className = "plain-list";
+      items.forEach(function (item) {
+        const entry = document.createElement("li");
+        entry.textContent = item;
+        list.appendChild(entry);
+      });
+      return list;
+    }
+
+    const tabs = document.getElementById("goal-tabs");
+    const goalContent = document.getElementById("goal-content");
+    const goalNames = Object.keys(goals);
+
+    function showGoals(name) {
+      Array.from(tabs.children).forEach(function (button) {
+        const selected = button.dataset.goal === name;
+        button.setAttribute("aria-selected", String(selected));
+        button.tabIndex = selected ? 0 : -1;
+      });
+
+      goalContent.replaceChildren();
+      [
+        ["Short-term", goals[name].short],
+        ["Long-term", goals[name].long]
+      ].forEach(function (group) {
+        const card = document.createElement("article");
+        card.className = "goal-card";
+        const heading = document.createElement("h3");
+        heading.textContent = group[0];
+        card.append(heading, createList(group[1]));
+        goalContent.appendChild(card);
+      });
+    }
+
+    goalNames.forEach(function (name, index) {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.id = "goal-tab-" + index;
+      button.dataset.goal = name;
+      button.setAttribute("role", "tab");
+      button.setAttribute("aria-controls", "goal-content");
+      button.setAttribute("aria-selected", "false");
+      button.tabIndex = -1;
+      button.textContent = name;
+      button.addEventListener("click", function () {
+        showGoals(name);
+      });
+      button.addEventListener("keydown", function (event) {
+        if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+        event.preventDefault();
+        const direction = event.key === "ArrowRight" ? 1 : -1;
+        const nextIndex = (index + direction + goalNames.length) % goalNames.length;
+        tabs.children[nextIndex].focus();
+        showGoals(goalNames[nextIndex]);
+      });
+      tabs.appendChild(button);
+    });
+    showGoals(goalNames[0]);
+
+    const actionList = document.getElementById("action-list");
+    Object.keys(actions).forEach(function (category) {
+      const card = document.createElement("article");
+      card.className = "action-card";
+      const heading = document.createElement("h3");
+      heading.textContent = category;
+      const details = document.createElement("dl");
+      actions[category].forEach(function (action) {
+        const term = document.createElement("dt");
+        const definition = document.createElement("dd");
+        term.textContent = action[0];
+        definition.textContent = action[1];
+        details.append(term, definition);
+      });
+      card.append(heading, details);
+      actionList.appendChild(card);
+    });
+
+    const challengeList = document.getElementById("challenge-list");
+    challenges.forEach(function (challenge) {
+      const row = document.createElement("article");
+      row.className = "challenge";
+
+      const summary = document.createElement("div");
+      const title = document.createElement("h3");
+      const description = document.createElement("p");
+      title.textContent = challenge.title;
+      description.textContent = challenge.description;
+      summary.append(title, description);
+
+      const plan = document.createElement("div");
+      plan.className = "challenge-plan";
+      const planTitle = document.createElement("h3");
+      planTitle.textContent = "What I will do";
+      plan.append(planTitle, createList(challenge.plan));
+      row.append(summary, plan);
+      challengeList.appendChild(row);
+    });
+
+    const roadmapList = document.getElementById("roadmap-list");
+    const progressTrack = document.getElementById("progress-track");
+    const progressFill = document.getElementById("progress-fill");
+    const progressCopy = document.getElementById("progress-copy");
+    const storageMessage = document.getElementById("storage-message");
+    const storageKey = "success-blueprint-roadmap";
+    let completed = {};
+
+    try {
+      const saved = localStorage.getItem(storageKey);
+      completed = saved ? JSON.parse(saved) : {};
+      if (!completed || typeof completed !== "object" || Array.isArray(completed)) {
+        completed = {};
+      }
+    } catch (error) {
+      storageMessage.textContent = "Progress could not be loaded from this browser.";
+    }
+
+    function drawRoadmap() {
+      let total = 0;
+      let done = 0;
+      roadmapList.replaceChildren();
+
+      roadmap.forEach(function (milestone, milestoneIndex) {
+        const item = document.createElement("li");
+        item.className = "milestone";
+        const when = document.createElement("span");
+        when.className = "milestone-year";
+        when.textContent = milestone.when;
+        const title = document.createElement("h3");
+        title.textContent = milestone.description;
+        const checklist = document.createElement("div");
+        checklist.className = "checklist";
+
+        milestone.steps.forEach(function (step, stepIndex) {
+          total += 1;
+          const key = milestoneIndex + "-" + stepIndex;
+          const label = document.createElement("label");
+          const checkbox = document.createElement("input");
+          const text = document.createElement("span");
+          checkbox.type = "checkbox";
+          checkbox.checked = completed[key] === true;
+          checkbox.dataset.key = key;
+          text.textContent = step;
+          if (checkbox.checked) done += 1;
+          label.append(checkbox, text);
+          checklist.appendChild(label);
+        });
+
+        item.append(when, title, checklist);
+        roadmapList.appendChild(item);
+      });
+
+      const percent = total ? Math.round((done / total) * 100) : 0;
+      progressFill.style.width = percent + "%";
+      progressTrack.setAttribute("aria-valuenow", String(percent));
+      progressCopy.textContent = done + " of " + total + " steps done (" + percent + "%)";
+    }
+
+    roadmapList.addEventListener("change", function (event) {
+      const checkbox = event.target;
+      if (!(checkbox instanceof HTMLInputElement) || !checkbox.dataset.key) return;
+      completed[checkbox.dataset.key] = checkbox.checked;
+      try {
+        localStorage.setItem(storageKey, JSON.stringify(completed));
+        storageMessage.textContent = "";
+      } catch (error) {
+        storageMessage.textContent = "Progress changed, but this browser could not save it.";
+      }
+      drawRoadmap();
+    });
+    drawRoadmap();
+
+    const deadline = new Date(2026, 10, 20);
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    const days = Math.round((deadline - today) / 86400000);
+    const countdown = document.getElementById("countdown");
+    if (days > 1) {
+      countdown.textContent = days + " days until the UNO admission deadline (November 20, 2026)";
+    } else if (days === 1) {
+      countdown.textContent = "1 day until the UNO admission deadline (November 20, 2026)";
+    } else if (days === 0) {
+      countdown.textContent = "The UNO admission deadline is today (November 20, 2026)";
+    } else {
+      countdown.textContent = "The UNO admission deadline (November 20, 2026) has passed";
+    }
+
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches && "IntersectionObserver" in window) {
+      const revealItems = document.querySelectorAll(
+        ".section-heading, .vision-panel, .values, .goal-columns, .actions, .timeline, .challenges, .people, .closing"
+      );
+      const revealObserver = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        });
+      }, { threshold: 0.12 });
+
+      revealItems.forEach(function (item) {
+        item.classList.add("reveal");
+        revealObserver.observe(item);
+      });
+    }
+  </script>
+</body>
+</html>
